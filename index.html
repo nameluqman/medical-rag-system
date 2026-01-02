@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical RAG System - Evidence-Based Medical Information</title>
+    <meta name="description" content="Ask medical questions and get evidence-based answers from reliable medical sources">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L2 7V12C2 16.5 4.23 20.68 7.62 23.15L12 24L16.38 23.15C19.77 20.68 22 16.5 22 12V7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 8V12L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="logo-text">Medical RAG</span>
+                </div>
+                <nav class="nav">
+                    <button class="nav-link" data-page="chat">Chat</button>
+                    <button class="nav-link" data-page="about">About</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Chat Interface -->
+        <section id="chat-interface" class="chat-interface">
+            <!-- Welcome Message -->
+            <div id="welcome-message" class="welcome-message">
+                <h1 class="hero-title">Evidence-Based Medical Information</h1>
+                <p class="hero-subtitle">Ask medical questions and get answers backed by reliable medical sources</p>
+            </div>
+
+            <!-- Conversation Container -->
+            <div id="conversation-container" class="conversation-container">
+                <!-- Messages will be dynamically added here -->
+            </div>
+        </section>
+
+        <!-- About Page -->
+        <section id="about-page" class="page">
+            <div class="container">
+                <div class="about-content">
+                    <h2 class="about-title">About Medical RAG System</h2>
+                    <div class="about-text">
+                        <p>This Medical RAG (Retrieval-Augmented Generation) system provides evidence-based medical information by combining:</p>
+                        <ul>
+                            <li><strong>Retrieval:</strong> Searching through comprehensive medical databases and literature</li>
+                            <li><strong>Generation:</strong> Using AI to synthesize information into clear, accurate answers</li>
+                        </ul>
+                        <p>The system is designed to provide reliable medical information while maintaining transparency about sources and limitations.</p>
+                    </div>
+                </div>
+            </section>
+    </main>
+
+    <!-- Chat Input Section -->
+    <div class="chat-input-section">
+        <div class="container">
+            <form id="search-form" class="chat-form">
+                <div class="chat-input-container">
+                    <div class="chat-input-wrapper">
+                        <svg class="search-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <input 
+                            type="text" 
+                            id="search-input" 
+                            class="chat-input" 
+                            placeholder="Ask your medical question..."
+                            autocomplete="off"
+                        >
+                        <button type="button" class="voice-button" id="voice-button" title="Voice input (coming soon)">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 1a3 3 0 0 1 3 3 0 0 1-3zm0 14l-1.5-2.5L3 19v-2.5L4.5 14l-1.5-2.5L12 15z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <button type="submit" class="send-button" id="send-button">
+                        <svg class="send-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 2L11 13.22v9.12L16.3 21l1.12-1.12L22 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Disclaimer Banner -->
+    <div class="disclaimer-banner">
+        <div class="container">
+            <div class="disclaimer-content">
+                <div class="disclaimer-icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 9V13M12 17H12.01M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="disclaimer-text">
+                    <strong>Medical Disclaimer:</strong> This system is for educational purposes only and not a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of qualified healthcare providers for medical concerns.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Medical RAG System. Educational use only.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>
