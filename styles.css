@@ -30,7 +30,7 @@
   /* Chat Colors - Enhanced for better UX */
   --user-bg: #0d47a1;
   --user-text: #ffffff;
-  --ai-bg: #ffffff; /* Changed to pure white */
+  --ai-bg: #e0f2fe;
   --ai-text: #1f2937;
   --ai-border: #7dd3fc;
   --ai-accent: #10b981;
@@ -127,7 +127,7 @@ body {
   top: 0;
   z-index: 100;
   backdrop-filter: blur(10px);
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(240, 249, 255, 0.95);
 }
 
 .header-content {
@@ -414,7 +414,7 @@ body {
 }
 
 .message.user .message-content {
-  background-color: transparent;
+  background-color: #bae6fd;
   color: var(--user-text);
   border: 2px solid var(--user-bg);
   order: 1;
@@ -576,7 +576,7 @@ body {
   box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   backdrop-filter: blur(20px);
-  background-color: rgba(255, 255, 255, 0.98);
+  background-color: rgba(240, 249, 255, 0.98);
 }
 
 .chat-form {
