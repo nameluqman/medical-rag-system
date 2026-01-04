@@ -21,18 +21,18 @@
   --text-primary: #1f2937;
   --text-secondary: #4b5563;
   --text-muted: #6b7280;
-  --background-primary: #ffffff;
-  --background-secondary: #f8f9fa;
-  --background-tertiary: #f1f3f7;
-  --border-color: #e5e7eb;
-  --border-light: #f0f2f5;
+  --background-primary: #f0f9ff;
+  --background-secondary: #e0f2fe;
+  --background-tertiary: #bae6fd;
+  --border-color: #7dd3fc;
+  --border-light: #38bdf8;
   
   /* Chat Colors - Enhanced for better UX */
   --user-bg: #0d47a1;
   --user-text: #ffffff;
   --ai-bg: #ffffff; /* Changed to pure white */
   --ai-text: #1f2937;
-  --ai-border: #e5e7eb;
+  --ai-border: #7dd3fc;
   --ai-accent: #10b981;
   
   /* Status Colors */
@@ -423,8 +423,10 @@ body {
 
 .message.assistant .message-content {
   background-color: var(--ai-bg);
-  border-color: var(--ai-border);
+  border: 1px solid var(--ai-border);
+  border-left: 4px solid #FF6B6B;
   max-width: 90%;
+  padding: var(--spacing-sm);
 }
 
 .message.loading .message-content {
