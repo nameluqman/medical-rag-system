@@ -404,25 +404,27 @@ body {
 }
 
 .message-content {
-  max-width: 70%;
+  max-width: 85%;
   background-color: var(--ai-bg);
   border: 1px solid var(--ai-border);
   border-radius: var(--radius-lg);
-  padding: var(--spacing-md);
+  padding: var(--spacing-lg);
   box-shadow: var(--shadow-sm);
   position: relative;
 }
 
 .message.user .message-content {
-  background-color: var(--user-bg);
+  background-color: transparent;
   color: var(--user-text);
-  border-color: var(--user-bg);
+  border: 2px solid var(--user-bg);
   order: 1;
+  max-width: 75%;
 }
 
 .message.assistant .message-content {
   background-color: var(--ai-bg);
   border-color: var(--ai-border);
+  max-width: 90%;
 }
 
 .message.loading .message-content {
