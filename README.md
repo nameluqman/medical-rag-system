@@ -1,3 +1,6 @@
+#Preview
+
+https://medical-rag-system.vercel.app/
 # Medical RAG System
 
 A responsive web application for Retrieval-Augmented Generation (RAG) of medical information. This frontend-only implementation provides a clean, accessible interface for asking medical questions and receiving AI-generated answers backed by reliable medical sources.
